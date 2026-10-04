@@ -4,3 +4,4 @@ cat <<EOT > .gitignore
 __pycache__/
 .DS_Store
 EOT
+*.db
