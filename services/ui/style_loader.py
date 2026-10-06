@@ -24,7 +24,7 @@ def inject_local_font(font_path, font_name):
     fmt = {"otf": "opentype"}.get(ext, ext)
     # mime -> MIME type of the font file for CSS, default to "font/{ext}" if not found in the mapping
     mime = {"otf": "font/otf"}.get(ext, f"font/{ext}")
-
+    # Inject the font into the Streamlit app using a <style> tag with @font-face rule 
     st.markdown(f"""
         <style>
         @font-face {{
@@ -44,7 +44,9 @@ def inject_webrtc_styles():
 
     with open(font_path, "rb") as font_file:
         encoded_font = base64.b64encode(font_file.read()).decode()
-
+    # Inject custom styles into the WebRTC iframe using JavaScript for Streamlit 
+    # The script finds the WebRTC iframe and injects a <style> tag with @font-face rule and custom styles for buttons.
+    
     components.html(
         f"""
         <script>
