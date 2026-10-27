@@ -1,10 +1,10 @@
-# 🏋🏻 AI Real-time GYM Coach
+# AI Real-time GYM Coach
 
 A real-time, browser-based AI fitness trainer built with **Streamlit** and **WebRTC**. This application allows users to log in, configure personalized workout plans, and use live video for AI-powered exercise tracking.
 
 ---
 
-## ✨ Current Features
+## Current Features
 
 - **User Authentication**  
   A secure login wall that creates and tracks unique user sessions.
@@ -39,7 +39,7 @@ A real-time, browser-based AI fitness trainer built with **Streamlit** and **Web
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Technology | Purpose |
 |---|---|
@@ -52,7 +52,7 @@ A real-time, browser-based AI fitness trainer built with **Streamlit** and **Web
 
 ---
 
-## 🚀 How to Run Locally
+## How to Run Locally
 
 ### 1. Clone the Repository
 
@@ -95,32 +95,32 @@ The application will then be available in your browser.
 
 ---
 
-## 📂 Project Overview
+## Project Overview
 
 The application combines:
 
-- 🔐 User authentication
-- 🗄️ SQLite database management
-- 🏋🏻 Workout planning
-- 📹 Real-time webcam streaming
-- 🧠 AI-based pose detection
-- 📐 Exercise angle analysis
-- 📊 Exercise tracking
+- User authentication
+- SQLite database management
+- Workout planning
+- Real-time webcam streaming
+- AI-based pose detection
+- Exercise angle analysis
+- Exercise tracking
 
 The goal is to provide an interactive AI-powered fitness coaching experience directly through a web browser.
 
 ---
 
-## 👨‍💻 Author
+## Author
 
 **Rajath J**
 
-- 💼 LinkedIn: [Rajath J](https://www.linkedin.com/in/rajath-j/)
-- 🔗 GitHub: [rajath-j](https://github.com/rajath-j)
+- LinkedIn: [Rajath J](https://www.linkedin.com/in/rajath-j/)
+- GitHub: [rajath-j](https://github.com/rajath-j)
 
 ---
 
-## 🏋🏻 Project
+## Project
 
 **AI Real-time GYM Coach**
 
