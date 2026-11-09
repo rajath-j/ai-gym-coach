@@ -16,26 +16,26 @@ A real-time, browser-based AI fitness trainer built with **Streamlit** and **Web
   An enhanced Streamlit interface featuring a custom dark theme, CSS injection, and the **Adobe Clean** font.
 
 - **Interactive Sidebar**  
-  A dynamic workout planner that allows users to select exercises such as:
+  A dynamic workout planner that allows users to select exercises, configure target **sets**, and set **repetitions**. Supported exercises include:
   - Squats
   - Push-ups
-  - Bicep Curls
-  - And more
+  - Biceps curls (Dumbbell)
+  - Shoulder press
+  - Lunges
 
-  Users can also configure target **sets** and **repetitions**.
+- **Live Video Streaming & Processing**  
+  Real-time webcam integration directly in the browser using `streamlit-webrtc`. Custom video processing handles frame-by-frame analysis with a threaded lock system to pass live metrics securely to the UI.
 
-- **Live Video Streaming**  
-  Real-time webcam integration directly in the browser using `streamlit-webrtc`.
+- **AI Pose Detection & Visual Feedback**  
+  MediaPipe Pose Landmarker is integrated for advanced body and movement tracking. The application dynamically draws pose skeletons, connection lines, and real-time metric text overlays directly on the live video feed.
 
-- **AI Pose Detection**  
-  MediaPipe Pose Landmarker is integrated for advanced body and movement tracking.
-
-- **Exercise Tracking**  
-  Built-in AI logic for **Squats**, including:
-  - Knee angle tracking
-  - Back angle tracking
-  - Squat depth detection
-  - Exercise status tracking
+- **Exercise Tracking & Form Analysis**  
+  Built-in AI logic actively evaluates form and counts reps for specific exercises:
+  - **Squats:** Knee/back angle tracking and squat depth detection (Good Depth / Too High).
+  - **Push-ups:** Elbow angle tracking, body alignment, and hip position status.
+  - **Biceps Curls:** Elbow angle tracking, shoulder stability, and swing detection.
+  - **Shoulder Press:** Elbow angle tracking, arm extension, and back arch status.
+  - **Lunges:** Front knee angle, torso angle, and balance status.
 
 ---
 
@@ -46,7 +46,7 @@ A real-time, browser-based AI fitness trainer built with **Streamlit** and **Web
 | **Python 3.11** | Programming Language |
 | **Streamlit** | Web Application Framework |
 | **Streamlit-WebRTC** | Real-time Video Streaming |
-| **OpenCV** | Computer Vision |
+| **OpenCV** | Computer Vision & Video Overlays |
 | **MediaPipe** | AI Pose Detection |
 | **SQLite3** | Local Database |
 
@@ -57,71 +57,5 @@ A real-time, browser-based AI fitness trainer built with **Streamlit** and **Web
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/rajath-j/ai-gym-coach.git
+git clone [https://github.com/rajath-j/ai-gym-coach.git](https://github.com/rajath-j/ai-gym-coach.git)
 cd ai-gym-coach
-```
-
-### 2. Create a Virtual Environment
-
-This project uses `uv` for Python environment management.
-
-```bash
-uv venv --python 3.11
-```
-
-Activate the virtual environment:
-
-```bash
-source .venv/bin/activate
-```
-
-### 3. Install Dependencies
-
-Install all required Python packages:
-
-```bash
-uv pip install -r requirements.txt
-```
-
-### 4. Run the Application
-
-Start the Streamlit application:
-
-```bash
-streamlit run main.py
-```
-
-The application will then be available in your browser.
-
----
-
-## Project Overview
-
-The application combines:
-
-- User authentication
-- SQLite database management
-- Workout planning
-- Real-time webcam streaming
-- AI-based pose detection
-- Exercise angle analysis
-- Exercise tracking
-
-The goal is to provide an interactive AI-powered fitness coaching experience directly through a web browser.
-
----
-
-## Author
-
-**Rajath J**
-
-- LinkedIn: [Rajath J](https://www.linkedin.com/in/rajath-j/)
-- GitHub: [rajath-j](https://github.com/rajath-j)
-
----
-
-## Project
-
-**AI Real-time GYM Coach**
-
-> A browser-based AI fitness trainer for real-time exercise tracking and workout assistance.
